@@ -93,7 +93,7 @@
                 
                                             </thead>
                                             <tbody>
-                                                <tr class="table-active">
+                                                <tr scope="row">
                                                     <td>
                                                         年齢
                                                     </td>
@@ -107,7 +107,7 @@
                                                         <span v-html="Math.round(answerDetectFaces.images[0].faces[0].age.score*1000)/10"></span>&#037;
                                                     </td>
                                                 </tr>
-                                                <tr class="table-active">
+                                                <tr class=scope="row">
                                                         <td>
                                                             性別 
                                                         </td>
@@ -163,7 +163,7 @@
 
                             </thead>
                             <tbody>
-                                <tr class="table-active" v-for="item in imageClasses">
+                                <tr scope="row" v-for="item in imageClasses">
                                     <td>
                                         <span v-html="item.class"></span>
                                     </td>
@@ -220,7 +220,7 @@
                     
                                 </thead>
                                 <tbody>
-                                    <tr class="table-active" v-for="item in imageCustomClasses">
+                                    <tr scope="row" v-for="item in imageCustomClasses">
                                         <td>
                                             <span v-html="item.class"></span>
                                         </td>
